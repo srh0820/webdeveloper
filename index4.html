@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <style>
+        body{
+            height: 100vh; 
+            /* vh - 화면 높이, vw - 화면 너비 */
+            display: flex;
+            /* 컨텐츠 높이를 부모 높이만큼 */
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            background-color: transparent; /* 투명 */
+            color: black;
+            font-size: 2rem;
+            padding: 0.5rem 2rem;
+            border-radius: 100px; /* 둥글게, 50% 제외한 나머지는 px로 입력, 그 외는 %로 하면 모양이 이상함*/
+            border: 3px solid black; /* 테두리 */
+            transition: 0.5s; /* 애니메니션 - 0.5초 동안 서서히 변하겠다 */
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            /* border-radius: 0px; 네모 */
+            /* transition: 0.5s; 마우스가 올라가 있을 때만 */
+        }
+    </style>
+</head>
+<body>
+    <button>HOVER</button>
+</body>
+</html>
