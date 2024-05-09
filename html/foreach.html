@@ -14,10 +14,12 @@
         <li>다중리스트 처리하기5</li>
     </ul>
     <script>
-        const menulist = ['네이버', '다음', '구글','아마존',''];
+        const menulist = ['html/css3', 'ECMA', 'JQuery','react','Figma'];
         document.querySelectorAll("ul li").forEach(function(el, idx){
             el.innerHTML = menulist[idx];
-            // list 순서대로 출력
+            el.addEventListener('mouseenter',function(){
+                alert(idx);
+            })
         })
     </script>
 </body>
