@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>다중리스트 처리하기1</li>
+        <li>다중리스트 처리하기2</li>
+        <li>다중리스트 처리하기3</li>
+        <li>다중리스트 처리하기4</li>
+        <li>다중리스트 처리하기5</li>
+    </ul>
+    <script>
+        const menulist = ['네이버', '다음', '구글','아마존',''];
+        document.querySelectorAll("ul li").forEach(function(el, idx){
+            el.innerHTML = menulist[idx];
+            // list 순서대로 출력
+        })
+    </script>
+</body>
+</html>
