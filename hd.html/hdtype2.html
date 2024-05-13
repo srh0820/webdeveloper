@@ -5,42 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
-    <link rel="stylesheet" href="./css/hdtype2.min.css">
+    <link rel="stylesheet" href="../css/hdtype2.min.css">
 </head>
 <body>
     <header id="hd">
-        <div class="inner">
-            <h1><a href="/"><img src="" alt=""></a></h1> <!-- 로고는 이미지로 -->
-            <!-- ul#gnb>li*5>a{대메뉴$} -->
-            <ul class="gnb">
+        <div class="inner d-flex">
+            <h1 class="mr"><a href="/">로고</a></h1> <!-- 로고는 이미지로 -->
+            <ul class="gnb d-flex mr">
                 <li><a href="">대메뉴1</a></li>
                 <li><a href="">대메뉴2</a></li>
                 <li><a href="">대메뉴3</a></li>
                 <li><a href="">대메뉴4</a></li>
                 <li><a href="">대메뉴5</a></li>
             </ul>
-            <!-- ul#promotion_gnb>li*2>a{대메뉴$} -->
-            <ul class="promotion_gnb">
-                <li><a href="">Sale</a></li>
-                <li><a href="">A상품</a></li>
-                <li><a href="">B상품</a></li>
-                <li><a href="">C상품</a></li>
-                <li><a href="">D상품</a></li>
+            <ul class="promotion_gnb d-flex mr-auto">
+                <li><a href="" class="text-gray">Sale</a></li>
+                <li><a href="" class="text-gray">A상품</a></li>
+                <li><a href="" class="text-gray">B상품</a></li>
+                <li><a href="" class="text-gray">C상품</a></li>
+                <li><a href="" class="text-gray">D상품</a></li>
             </ul>
-            <!-- ul.member>li*2>a -->
-            <ul class="iconMenu">
+            <ul class="iconMenu d-flex">
                 <li class="serchform">
                     <div class="bg-gray round50">
-                        <form action="text" plecahode="검색어를 입력해주세요.">
-                            <button>
+                        <form action="" class="d-flex">
+                            <input type="text" plecahode="검색어를 입력해주세요.">
+                            <button type="submit">
                                 <i>svg</i>
                                 <i>검색</i>
                             </button>
                         </form>
                     </div>
                 </li>
-                <li><i>svgicon</i><span>장바구니</span></li>
-                <li><i>svgicon</i><span>마이페이지</span></li>
+                <li><i>svgicon</i><span class="sr_only">장바구니</span></li>
+                <li><i>svgicon</i><span class="sr_only">마이페이지</span></li>
             </ul>
         </div>
     </header>
