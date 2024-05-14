@@ -1,56 +1,58 @@
-$menumg : 1rem;     // scss 변수 - 공통으로 들어가는 속성에 사용
+// 하드코딩
+// $menumg : 1rem;     // scss 변수 - 공통으로 들어가는 속성에 사용
+// #hd{
+//     padding: 10px 35px;
+//     display: flex;
+//     justify-content: space-between;
+//     border-bottom: 1px solid #ddd;
+//     h1{
+//         a{
+//             img{
 
-#hd{
-    padding: 10px 35px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ddd;
-    h1{
-        a{
-            img{
+//             }
+//         }
 
-            }
-        }
+//     }
+//     li{
+//         margin-left: $menumg;
+//     }
+//     .gnb{
+//         display: flex;
+//         margin-right: auto;
+//         margin-left: 1rem;
+//         li{ 
+//             a{
 
-    }
-    li{
-        margin-left: $menumg;
-    }
-    .gnb{
-        display: flex;
-        margin-right: auto;
-        margin-left: 1rem;
-        li{ 
-            a{
+//             }
+//         }
 
-            }
-        }
-
-    }
-    .iconMenu{
-        display: flex;
-        li{
-            i{
+//     }
+//     .iconMenu{
+//         display: flex;
+//         li{
+//             i{
                 
-            }
-            span{
-                //접근성 지켜서 안보이게 밖으로 내보내기
-                position: absolute; 
-                width: 0;
-                height: 0;
-                display: block;
-                overflow: hidden;
-                opacity: 0;
-            }
-        }
+//             }
+//             span{
+//                 //접근성 지켜서 안보이게 밖으로 내보내기
+//                 position: absolute; 
+//                 width: 0;
+//                 height: 0;
+//                 display: block;
+//                 overflow: hidden;
+//                 opacity: 0;
+//             }
+//         }
 
-    }
-    .member{
-        display: flex;
-        li{
-            a{
+//     }
+//     .member{
+//         display: flex;
+//         li{
+//             a{
 
-            }
-        }
-    }
-}
+//             }
+//         }
+//     }
+// }
+
+//부트스트랩
