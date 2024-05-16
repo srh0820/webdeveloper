@@ -4,15 +4,18 @@
 #hd a {
   text-decoration: none;
 }
-#hd .gnb .d1:hover ul {
+#hd .gnb:hover ul {
+  max-height: 180px !important;
+}
+#hd .gnb .d1_li:hover ul {
   max-height: 180px;
 }
-#hd .gnb .d1 .gnb_d1_a {
+#hd .gnb .d1_li .d1_a {
   font-size: 1.2em;
   font-weight: 700;
   color: #000;
 }
-#hd .gnb .d1 .ul {
+#hd .gnb .d1_li .d2_ul {
   min-width: 80px;
   white-space: nowrap;
   color: white;
@@ -23,15 +26,15 @@
   padding: 0 1rem !important;
   border: 0 !important;
 }
-#hd .gnb .d1 .ul:before, #hd .gnb .d1 .ul:after {
+#hd .gnb .d1_li .d2_ul:before, #hd .gnb .d1_li .d2_ul:after {
   content: "";
   display: block;
   height: 16px;
 }
-#hd .gnb .d1 .ul.leftul {
+#hd .gnb .d1_li .d2_ul.leftul {
   left: -3rem;
 }
-#hd .gnb .d1 .ul li a {
+#hd .gnb .d1_li .d2_ul li a {
   font-size: 0.85rem;
   color: white;
 }
