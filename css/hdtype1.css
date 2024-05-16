@@ -4,21 +4,25 @@
 #hd a {
   text-decoration: none;
 }
+#hd .gnb .d1:hover ul {
+  display: block;
+}
 #hd .gnb .d1 .gnb_d1_a {
   font-size: 1.2em;
   font-weight: 700;
   color: #000;
 }
-#hd .gnb .d1 .d2 {
+#hd .gnb .d1 .ul {
   min-width: 80px;
   white-space: nowrap;
   color: white;
   background-color: #000;
+  display: none;
 }
-#hd .gnb .d1 .d2.leftul {
+#hd .gnb .d1 .ul.leftul {
   left: -3rem;
 }
-#hd .gnb .d1 .d2 li a {
+#hd .gnb .d1 .ul li a {
   font-size: 0.85rem;
   color: white;
 }

@@ -58,25 +58,31 @@
 //부트스트랩
 #hd{
     font-family: "Noto Sans KR";
-    a{
+    a{  // 전체 a 언더라인 빼기
         text-decoration: none;
     }
     .gnb{
-        .d1{
-            .gnb_d1_a{
+        .d1{    // 대메뉴 li
+            &:hover{    // d1 에 마우스 올리면 ul 이 나타남
+                ul{     
+                    display: block;
+                }
+            }
+            .gnb_d1_a{  // 대메뉴 a
                 font-size: 1.2em;
                 font-weight: 700;
                 color: #000;
             }
-            .d2{ 
+            .ul{    // 소메뉴 ul
                 min-width: 80px;    // abs 를 지정해줬기 때문에
                 white-space: nowrap;    // 2줄로 나오지 않기위함
                 color: white;
                 background-color: #000;
+                display: none;  // 숨겨놓기
                 &.leftul{     // d2가 d2_3 라는 클래스를 가지고 있다면
                     left: -3rem;
                 }
-                li{
+                li{ // 소메뉴 li
                     a{
                         font-size: 0.85rem;
                         color: white;
