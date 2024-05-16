@@ -83,7 +83,12 @@
                 overflow: hidden;
                 padding: 0 1rem !important;
                 border: 0 !important;
-
+                &:before,
+                &:after{    // ul 글자 위아래로 여백 주기
+                    content: "";
+                    display: block;
+                    height: 16px;
+                }
                 &.leftul{     // d2가 d2_3 라는 클래스를 가지고 있다면
                     left: -3rem;
                 }
