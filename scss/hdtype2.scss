@@ -27,3 +27,32 @@
 //     overflow: hidden;
 //     opacity: 0;
 // }
+
+#hd{
+    a{
+        text-decoration: none;
+    }
+    .gnb{
+        a:hover{
+            color: red !important;
+        }
+        &:hover{
+            ul{
+                height: 180px;
+            }
+        }
+
+        ul{
+            top:100%;
+            min-width: 120px;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        li:hover{
+            > a{
+                color: red;
+            }
+        }
+    }
+}

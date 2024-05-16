@@ -1,0 +1,1 @@
+#hd a{text-decoration:none}#hd .gnb a:hover{color:red !important}#hd .gnb:hover ul{height:180px}#hd .gnb ul{top:100%;min-width:120px;height:0;overflow:hidden;transition:.5s}#hd .gnb li:hover>a{color:red}
