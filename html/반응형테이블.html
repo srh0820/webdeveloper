@@ -43,12 +43,18 @@
             align-items: center;
         }
         @media (max-width: 990px){
-            #about{
-                height: calc(100vw + 50px); /* 정사각형으로 모양 잡기 */
+            /* #about{
+                height: calc(100vw + 50px); 정사각형으로 모양 잡기
                 display: block;
                 padding: 5rem 0 0;
                 text-align: center;
                 background-position: -30vw center;
+            } */
+            #about{
+                height: calc(100vw + 50px);
+                flex-direction: column; /* flex 방향을 수직으로 바꿔줌 */
+                background-image: url(../img/bg_m.jpg); 
+                /* 유전을 받으면서 오로지 이미지만 고치고 싶을 때 background-image 라고 상세하게 구체적으로 지정해줘야함 */
             }
         }
     </style>
