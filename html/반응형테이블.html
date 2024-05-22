@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 반응형을 고려한 테이블 구조의 레이아웃 </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul, li, dl, dt, dd{
+            list-style: none;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .checksvg::before{
+            content: "";     /* content: url(); 여기에 이미지 넣을 수 있지만 스타일 제어가 되지 않음 */
+            display: block;
+            width: 3rem;
+            height: 3rem;
+            background-image: url(../img/check.svg);
+            background-size: 50%;
+            background-repeat: no-repeat; /* 반복 X */
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- dl>dt{타이틀}+dd.checksvg.d-flex*5{<span>리스트들</span>} -->
+    <dl>
+        <dt>타이틀</dt>
+        <dd class="checksvg d-flex"><span>리스트들</span></dd>
+        <dd class="checksvg d-flex"><span>리스트들</span></dd>
+        <dd class="checksvg d-flex"><span>리스트들</span></dd>
+        <dd class="checksvg d-flex"><span>리스트들</span></dd>
+        <dd class="checksvg d-flex"><span>리스트들</span></dd>
+    </dl>
+</body>
+</html>
